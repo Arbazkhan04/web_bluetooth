@@ -122,7 +122,7 @@ function PrintButton() {
       const receiptData = "Your receipt details here";
 
       // Fetch the receipt from the server
-      const response = await fetch('http://localhost:8000/generate-receipt', {
+      const response = await fetch('http://localhost:8001/generate-receipt', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ receiptData, printerType })
